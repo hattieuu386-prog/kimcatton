@@ -30,7 +30,30 @@ Anh lấy loại nào ạ? 👇
 |---|---|---|
 | Dân Dụng 3 trong 1 | Gửi tin nhắn -> khối "Tư vấn dân dụng" | Bật Bot + Gắn nhãn `kim-dan-dung` |
 | Công Nghiệp 5 Sóng | Gửi tin nhắn -> khối "Tư vấn công nghiệp" | Bật Bot + Gắn nhãn `kim-cong-nghiep` |
-| Xem lưỡi & cắt thử | Gửi luồng "chào báo giá" (Luồng 1: ảnh, video cắt và úp khít, giá, nút chọn kìm) | Bật Bot |
+| Xem lưỡi & cắt thử | Gửi tin nhắn -> khối "Bằng chứng chất lượng" (bên dưới) | Bật Bot |
+
+### Khối "Bằng chứng chất lượng" (cho nút "Xem lưỡi & cắt thử")
+
+Không nhắc lại giá (khách đã thấy ở tin mở đầu). Chỉ cho xem bằng chứng rồi hỏi chọn kìm.
+
+Thứ tự khối:
+1. **Video**: VIDEO_TON_05_06 (lưỡi tháo rời -> đo thước -> cắt tôn 5-6 zem -> úp khít sóng). Chưa quay thì dùng video cắt thật đang có.
+2. **Hình ảnh**: 1 ảnh cận lưỡi tháo rời, thấy vạch cắt dây (bỏ nếu video đã quay rõ cảnh này).
+3. **Đang nhập / chờ 2-3 giây** (nếu có).
+4. **Văn bản** + 2 nút:
+
+```
+Dạ anh xem kỹ ạ 👆
+✅ Lưỡi làm từ 1 miếng thép SKD11 nguyên khối, nhìn vạch cắt dây là thấy, không ghép miếng, cắt lâu không lệch
+✅ Tôn sối 5-6 zem cắt 1 nhát, mép thẳng, úp lên sóng khít không hở
+✅ Lưỡi mòn thì thay lưỡi, không phải mua kìm mới
+Nhận hàng anh cầm tận tay, cắt thử y vậy, không ưng trả lại em không mất phí. Anh lấy loại nào ạ? 👇
+```
+
+| Tiêu đề nút | Bấm vào thì | Hành động thêm |
+|---|---|---|
+| Dân Dụng 3 trong 1 | Gửi tin nhắn -> khối "Tư vấn dân dụng" | Bật Bot + Gắn nhãn `kim-dan-dung` |
+| Công Nghiệp 5 Sóng | Gửi tin nhắn -> khối "Tư vấn công nghiệp" | Bật Bot + Gắn nhãn `kim-cong-nghiep` |
 
 Khách không bấm nút mà tự gõ: AI trả lời. Bảng giá đã nằm trong lịch sử chat nên AI không gửi lại (BƯỚC 1 của instruction).
 
