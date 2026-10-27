@@ -1,0 +1,24 @@
+{
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "KÌM CẮT TÔN ỐP SÓNG KMS 1tr599k - Miễn ship - Tặng 2 đôi găng tay",
+            "image_url": "DAN_LINK_ANH_VAO_DAY",
+            "subtitle": "Lưỡi 1 miếng SKD11 nguyên khối, tôi nhiệt. Nhận hàng cắt thử, không ưng trả lại",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Xem lưỡi & báo giá",
+                "payload": "__bc_1237124289476674_452135450"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
