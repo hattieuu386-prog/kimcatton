@@ -5,6 +5,36 @@ Giá, quà, câu hỏi chọn kìm trong luồng phải giống hệt instructio
 
 ---
 
+## LUỒNG 0: tin mở đầu cho quảng cáo (gắn vào Payload JSON)
+
+Tin này hiện sẵn trong khung chat ngay khi khách bấm quảng cáo, TRƯỚC khi khách nhắn gì.
+Meta chỉ cho 1 tin, gồm 1 ảnh hoặc chữ, kèm nút trả lời nhanh. Không gửi được nhiều ảnh, video liên tiếp.
+Vì vậy: tin này phải tự đủ (có giá + quà), nút bấm mới mở phần còn lại.
+
+Làm trong Botcake: Luồng tin nhắn -> Opt-in Message (hoặc luồng có nút "Chia sẻ Payload"), rồi lấy JSON dán vào mẫu tin nhắn của quảng cáo.
+
+**Ảnh (1 ảnh):** lưỡi SKD11 nguyên khối, hoặc miếng tôn cắt úp khít sóng. Ảnh thật.
+
+**Chữ:**
+```
+Kìm cắt tôn ốp sóng KMS 1tr599k, miễn ship 🛠️
+🎁 Tặng 2 đôi găng tay chống cắt
+Lưỡi 1 miếng SKD11 nguyên khối, nhận hàng cắt thử rồi mới trả tiền.
+Anh lấy loại nào ạ? 👇
+```
+
+**3 nút trả lời nhanh** (tiêu đề tối đa 20 ký tự):
+
+| Tiêu đề nút | Bấm vào thì | Hành động thêm |
+|---|---|---|
+| Dân Dụng 3 trong 1 | Gửi tin nhắn -> khối "Tư vấn dân dụng" | Bật Bot + Gắn nhãn `kim-dan-dung` |
+| Công Nghiệp 5 Sóng | Gửi tin nhắn -> khối "Tư vấn công nghiệp" | Bật Bot + Gắn nhãn `kim-cong-nghiep` |
+| Xem video cắt thử | Gửi luồng "chào báo giá" (Luồng 1: ảnh, video, giá, nút chọn kìm) | Bật Bot |
+
+Khách không bấm nút mà tự gõ: AI trả lời. Bảng giá đã nằm trong lịch sử chat nên AI không gửi lại (BƯỚC 1 của instruction).
+
+---
+
 ## LUỒNG 1: "chào báo giá"
 
 **Điểm kích hoạt** (gắn cả 4):
