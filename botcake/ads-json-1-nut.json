@@ -1,0 +1,18 @@
+{
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Kìm cắt tôn ốp sóng KMS 1tr599k, miễn ship 🛠️\nLưỡi làm từ 1 miếng thép SKD11 nguyên khối, cắt dây, tôi nhiệt, không ghép miếng nên cắt lâu không lệch, úp khít sóng.\n🎁 Tặng 2 đôi găng tay chống cắt\n✅ Nhận hàng cắt thử, không ưng trả lại không mất phí",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Xem lưỡi & báo giá",
+            "payload": "__bc_1237124289476674_452135450"
+          }
+        ]
+      }
+    }
+  }
+}
