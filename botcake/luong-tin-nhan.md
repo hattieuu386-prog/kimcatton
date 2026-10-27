@@ -13,13 +13,14 @@ Vì vậy: tin này phải tự đủ (có giá + quà), nút bấm mới mở p
 
 Làm trong Botcake: Luồng tin nhắn -> Opt-in Message (hoặc luồng có nút "Chia sẻ Payload"), rồi lấy JSON dán vào mẫu tin nhắn của quảng cáo.
 
-**Ảnh (1 ảnh):** lưỡi SKD11 nguyên khối, hoặc miếng tôn cắt úp khít sóng. Ảnh thật.
+**Ảnh (1 ảnh ghép, ảnh thật):** bên trái cận lưỡi tháo rời thấy rõ 1 khối liền + vạch cắt dây; bên phải miếng tôn vừa cắt úp khít lên sóng. Chữ trên ảnh: "1 KHỐI SKD11 - CẮT DÂY - TÔI NHIỆT" và "ÚP KHÍT SÓNG". Không đưa sản phẩm, tên hay logo shop khác vào ảnh.
 
 **Chữ:**
 ```
 Kìm cắt tôn ốp sóng KMS 1tr599k, miễn ship 🛠️
+Chọn kìm anh em xem lưỡi trước: lưỡi KMS làm từ 1 miếng thép SKD11 nguyên khối, cắt dây, tôi nhiệt, không ghép miếng nên cắt lâu không lệch, mép thẳng, úp khít sóng.
 🎁 Tặng 2 đôi găng tay chống cắt
-Lưỡi 1 miếng SKD11 nguyên khối, nhận hàng cắt thử rồi mới trả tiền.
+✅ Nhận hàng cầm tận tay, cắt thử, không ưng trả lại không mất phí
 Anh lấy loại nào ạ? 👇
 ```
 
@@ -29,7 +30,7 @@ Anh lấy loại nào ạ? 👇
 |---|---|---|
 | Dân Dụng 3 trong 1 | Gửi tin nhắn -> khối "Tư vấn dân dụng" | Bật Bot + Gắn nhãn `kim-dan-dung` |
 | Công Nghiệp 5 Sóng | Gửi tin nhắn -> khối "Tư vấn công nghiệp" | Bật Bot + Gắn nhãn `kim-cong-nghiep` |
-| Xem video cắt thử | Gửi luồng "chào báo giá" (Luồng 1: ảnh, video, giá, nút chọn kìm) | Bật Bot |
+| Xem lưỡi & cắt thử | Gửi luồng "chào báo giá" (Luồng 1: ảnh, video cắt và úp khít, giá, nút chọn kìm) | Bật Bot |
 
 Khách không bấm nút mà tự gõ: AI trả lời. Bảng giá đã nằm trong lịch sử chat nên AI không gửi lại (BƯỚC 1 của instruction).
 
