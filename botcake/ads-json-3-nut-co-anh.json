@@ -1,0 +1,34 @@
+{
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Kìm cắt tôn ốp sóng KMS 1tr599k - Miễn ship - Tặng 2 đôi găng tay",
+            "image_url": "LINK_ANH_LUOI_NGUYEN_KHOI.jpg",
+            "subtitle": "Lưỡi 1 miếng SKD11 nguyên khối, tôi nhiệt. Nhận hàng cắt thử, không ưng trả lại",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Dân Dụng 3 trong 1",
+                "payload": "PAYLOAD_LUONG_TU_VAN_DAN_DUNG"
+              },
+              {
+                "type": "postback",
+                "title": "Công Nghiệp 5 Sóng",
+                "payload": "PAYLOAD_LUONG_TU_VAN_CONG_NGHIEP"
+              },
+              {
+                "type": "postback",
+                "title": "Xem lưỡi & cắt thử",
+                "payload": "__bc_1237124289476674_452135450"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
